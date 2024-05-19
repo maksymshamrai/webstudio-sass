@@ -1,0 +1,50 @@
+.features {
+    display: flex;
+    justify-content: center;
+    &-list-item {
+        width: 270px;
+        height: 224px;
+    }
+    &-list-item::before {
+        content: "";
+        display: inline-block;
+        background-image: url("./images/Group\ 1.png");
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+    &-list-item:nth-child(2)::before {
+        content: "";
+        display: inline-block;
+        background-image: url("./images/Group\ 2.png");
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+    &-list-item:nth-child(3)::before {
+        content: "";
+        display: inline-block;
+        background-image: url("./images/Group\ 3.png");
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+    &-list-item:nth-child(4)::before {
+        content: "";
+        display: inline-block;
+        background-image: url("./images/Group\ 4.png");
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+    &-list-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    &-list-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}

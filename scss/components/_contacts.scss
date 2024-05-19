@@ -1,0 +1,11 @@
+.contact-list {
+    display: flex;
+    gap: 50px;
+    &-contact-list-item {
+        font-family: 'Roboto', sans-serif;
+        color: #757575;
+    }
+    &-contact-list-item:hover {
+        color: #2196F3
+    }
+}

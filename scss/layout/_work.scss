@@ -1,0 +1,28 @@
+.work { 
+    padding-bottom: 94px;
+    &-work-list {
+        display: flex;
+        gap: 30px;
+    }
+    &-work-list-img-wrap {
+        position: relative;
+    }
+    &-work-list-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        width: 100%;
+        background-color: #2F303ACC;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.41px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase; 
+    }
+}

@@ -1,0 +1,20 @@
+.header {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+    &-header-container {
+        display: flex;
+        gap: 93px;
+        align-items: center;
+    }
+    &-logo {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: #2196F3;
+
+    }
+    &-logo2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: black; 
+    }
+}

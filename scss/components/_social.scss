@@ -1,0 +1,20 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    &-social-list-item {
+        width: 44px;
+        height: 44px;
+        display: inline-block;
+    }
+    &-social-list-item:hover {
+        color: #FFFFFF;
+        background-color: #2196F3;
+        border-radius: 50%;
+    }
+    &-social-list-icon {
+        fill: currentColor;
+    }
+}

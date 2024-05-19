@@ -1,0 +1,11 @@
+.nav-list {
+    display: flex;
+    gap: 50px;
+    &-nav-list-item {
+        font-family: 'Roboto';
+        font-weight: 500;
+    }
+    &-list-item:hover {
+        color: skyblue;
+    }
+}

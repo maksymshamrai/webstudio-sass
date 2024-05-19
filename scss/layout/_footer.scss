@@ -1,0 +1,12 @@
+.footer {
+    padding: 60px 0;
+    background-color: #2F303A;
+    &-container {
+        display: flex;
+        gap: 70px;
+    }
+    &-logo {
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+}
