@@ -1,0 +1,48 @@
+.portfolio {
+    padding: 94px 0;
+    &-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 94px 0;
+    }
+    &-list-item {
+        width: 370px;
+        height: 404px;
+        border: 1px solid #EEEEEE;
+    }
+    &-list-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        padding-top: 20px;
+        padding-left: 24px;
+    }
+    &-list-text {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        color: #757575;
+        padding-top: 4px;
+        padding-left: 24px;
+        padding-bottom: 20px;
+    }
+}
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    &-btn {
+        height: 38px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        border-radius: 4px;
+        padding: 6px 22px 6px 22px;
+    }
+    &-btn:hover {
+        background-color: #2196F3;
+        color: #FFFFFF; 
+    }
+}

@@ -1,7 +1,7 @@
 .hero {
-    background-image: url("./images/background\ hero.png");
+    background-image: url("../images/background\ hero.png");
     padding: 200px 0;
-    &-hero-title {
+    &-title {
         text-align: center;
         max-width: 696px;
         margin: 0 auto;
@@ -14,12 +14,14 @@
         color: #FFFFFF;
         text-transform: uppercase;
     }
-    &-hero-btn {
+    &-btn {
         width: 216px;
         height: 50px;
         background-color: #2196F3;
         color: #FFFFFF;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
+        display: block;
+        margin: 0 auto;
     }
 }

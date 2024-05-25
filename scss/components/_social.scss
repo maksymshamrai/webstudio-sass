@@ -1,20 +1,31 @@
+.social-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 .social-list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding-bottom: 30px;
-    &-social-list-item {
+    &-link {
         width: 44px;
         height: 44px;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #757575;
     }
-    &-social-list-item:hover {
+    &-link:hover {
         color: #FFFFFF;
         background-color: #2196F3;
         border-radius: 50%;
     }
-    &-social-list-icon {
+    &-icon {
         fill: currentColor;
     }
 }

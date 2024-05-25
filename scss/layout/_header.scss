@@ -1,20 +1,22 @@
 .header {
     padding: 25px 0;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
-    &-header-container {
+    &-container {
         display: flex;
         gap: 93px;
         align-items: center;
     }
     &-logo {
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
         color: #2196F3;
 
     }
-    &-logo2 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
+    &-logo-span {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
         color: black; 
     }
 }

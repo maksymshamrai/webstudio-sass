@@ -6,7 +6,17 @@
         gap: 70px;
     }
     &-logo {
-        color: #FFFFFF;
-        padding-bottom: 20px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        color: #2196F3;
+        margin-bottom: 20px;
+
+    }
+    &-logo-span {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        color: #FFFFFF; 
     }
 }

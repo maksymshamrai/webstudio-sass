@@ -1,11 +1,12 @@
 .nav-list {
     display: flex;
     gap: 50px;
-    &-nav-list-item {
+    &-link {
         font-family: 'Roboto';
         font-weight: 500;
+        color: #212121;
     }
-    &-list-item:hover {
-        color: skyblue;
+    &-link:hover {
+        color: #2196F3;
     }
 }

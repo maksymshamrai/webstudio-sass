@@ -1,0 +1,23 @@
+.clients {
+    padding: 94px 0;
+    &-title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Roboto', sans-serif;
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    &-list-item {
+        flex-basis: calc((100% - 150px) / 6);
+    }
+    &-list-link {
+        height: 92px;
+        border: 1px solid#AFB1B8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

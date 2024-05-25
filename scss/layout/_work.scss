@@ -1,13 +1,20 @@
 .work { 
     padding-bottom: 94px;
-    &-work-list {
+    &-title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    &-list {
         display: flex;
         gap: 30px;
     }
-    &-work-list-img-wrap {
+    &-list-img-wrap {
         position: relative;
     }
-    &-work-list-text {
+    &-list-text {
         position: absolute;
         bottom: 0;
         left: 0;

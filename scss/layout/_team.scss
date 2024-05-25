@@ -2,12 +2,30 @@
     padding: 94px 0;
     background-color: #F5F4FA;
     &-title {
+        text-align: center;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 36px;
+        margin-bottom: 50px;
     }
     &-list {
         display: flex;
         justify-content: center;
+        gap: 30px;
+    }
+    &-list-item {
+        background-color: #FFFFFF;
+    }
+    &-list-title, &-list-text 
+     {
+        text-align: center;
+
+    }
+    &-list-title {
+       margin-top: 30px;
+       margin-bottom: 10px;
+    }
+    &-list-text {
+        margin-bottom: 16px;
     }
 }
