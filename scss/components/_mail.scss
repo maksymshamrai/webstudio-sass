@@ -1,0 +1,29 @@
+.mail {
+    &-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &-textarea {
+        width: 358px;
+        height: 50px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: #2F303A;
+        color: #FFFFFF;
+    }
+    &-btn {
+        width: 200px;
+        height: 50px;
+        background-color: #2196F3;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
+}

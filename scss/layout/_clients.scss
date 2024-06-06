@@ -15,9 +15,17 @@
     }
     &-list-link {
         height: 92px;
-        border: 1px solid#AFB1B8;
+        border: 1px solid #AFB1B8;
         display: flex;
         align-items: center;
         justify-content: center;
+        color: #AFB1B8;
+    }
+    &-list-link:hover {
+        border: 1px solid #2196F3;
+        color: #2196F3;
+    }
+    &-list-icon {
+        fill: currentColor;
     }
 }

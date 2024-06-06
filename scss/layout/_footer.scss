@@ -19,4 +19,28 @@
         font-size: 26px;
         color: #FFFFFF; 
     }
+    &-social-link {
+        border-radius: 50%;
+        background-color: #4d4d4e;
+        color: #FFFFFF;
+    }
+    &-form-input {
+        padding: 15px;
+        width: 358px;
+        height: 50px;
+        background-color: #2F303A;
+        border: 1px solid #FFFFFF4D;
+        border-radius: 5px;
+    }
+    &-form-btn {
+        width: 200px;
+        height: 50px;
+        background-color: #2196F3;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
 }

@@ -69,6 +69,34 @@ textarea {
   margin: 0 auto;
 }
 
+.mail-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.mail-textarea {
+  width: 358px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #2F303A;
+  color: #FFFFFF;
+}
+.mail-btn {
+  width: 200px;
+  height: 50px;
+  background-color: #2196F3;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .social-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -147,6 +175,14 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #AFB1B8;
+}
+.clients-list-link:hover {
+  border: 1px solid #2196F3;
+  color: #2196F3;
+}
+.clients-list-icon {
+  fill: currentColor;
 }
 
 .features {
@@ -228,6 +264,30 @@ textarea {
   font-weight: 700;
   font-size: 26px;
   color: #FFFFFF;
+}
+.footer-social-link {
+  border-radius: 50%;
+  background-color: #4d4d4e;
+  color: #FFFFFF;
+}
+.footer-form-input {
+  padding: 15px;
+  width: 358px;
+  height: 50px;
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  border-radius: 5px;
+}
+.footer-form-btn {
+  width: 200px;
+  height: 50px;
+  background-color: #2196F3;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .header {
