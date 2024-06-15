@@ -1,5 +1,9 @@
-.work { 
-    padding-bottom: 94px;
+.work {
+    display: none;
+    @include desc(1199px) {
+        padding-bottom: 94px;
+        display: block;
+    }
     &-title {
         text-align: center;
         margin-bottom: 50px;

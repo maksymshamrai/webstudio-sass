@@ -9,17 +9,27 @@
         margin-bottom: 50px;
     }
     &-list {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
+        @include tab(767px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
     }
     &-list-item {
         background-color: #FFFFFF;
+        width: 450px;
+        @include tab(767px) {
+            width: 354px;
+        }
+        @include desc(1199px) {
+            width: 270px;
+        }
     }
     &-list-title, &-list-text 
      {
         text-align: center;
-
     }
     &-list-title {
        margin-top: 30px;

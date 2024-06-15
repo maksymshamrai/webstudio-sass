@@ -20,3 +20,36 @@
         color: black; 
     }
 }
+
+.nav-list {
+    display: none;
+    @include tab(767px) {
+        display: flex;
+        gap: 50px;
+    }
+
+    &-link {
+        font-family: 'Roboto';
+        font-weight: 500;
+        color: #212121;
+    }
+    &-link:hover {
+        color: #2196F3;
+    }
+}
+.contact-list {
+    display: none;
+    @include tab(767px) {
+        display: flex;
+        gap: 50px;
+        margin-left: auto;
+    }
+
+    &-link {
+        font-family: 'Roboto', sans-serif;
+        color: #757575;
+    }
+    &-link:hover {
+        color: #2196F3
+    }
+}

@@ -5,6 +5,7 @@
     color: #FFFFFF;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
 }
 .social-list {
     display: flex;
@@ -28,4 +29,7 @@
     &-icon {
         fill: currentColor;
     }
+}
+.social-container {
+    margin-bottom: 60px;
 }

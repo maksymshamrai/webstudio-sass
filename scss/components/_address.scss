@@ -1,4 +1,8 @@
 .address {
+    text-align: center;
+    &-container {
+        margin-bottom: 60px;
+    }
     &-list-link {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;

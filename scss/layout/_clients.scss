@@ -7,11 +7,18 @@
     }
     &-list {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
+        justify-content: center;
     }
     &-list-item {
+        flex-basis: calc((100% - 30px) / 2);
+        @include tab(767px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+        @include desc(1199px) {
         flex-basis: calc((100% - 150px) / 6);
+        }
     }
     &-list-link {
         height: 92px;
