@@ -2,9 +2,15 @@
     padding: 25px 0;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
     &-container {
-        display: flex;
-        gap: 93px;
-        align-items: center;
+        @include tab(767px) {
+            display: flex;
+            gap: 87px;
+            align-items: center;
+        }
+        @include desc(1199px) {
+            gap: 93px;
+        }
+
     }
     &-logo {
         font-family: 'Raleway', sans-serif;
@@ -41,11 +47,25 @@
     display: none;
     @include tab(767px) {
         display: flex;
-        gap: 50px;
+        flex-direction: column;
+        gap: 10px;
         margin-left: auto;
+    }
+    @include desc (1199px) {
+        flex-direction: row;
+        gap: 50px;
     }
 
     &-link {
+        @include tab(767px) {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            font-size: 12px;
+        }
+        @include desc(1199px) {
+            font-size: 14px;
+        }
         font-family: 'Roboto', sans-serif;
         color: #757575;
     }

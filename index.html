@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <a href="" class="header-logo">Web<span class="header-logo-span">Sutdio</span></a>
+            <a href="" class="header-logo">Web<span class="header-logo-span">Studio</span></a>
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="" class="nav-list-link">Студія</a></li>
@@ -36,7 +36,7 @@
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-btn" type="button">Замовити послугу</button>
+            <button class="hero-btn" data-modal-open>Замовити послугу</button>
         </div>
     </section>
     <section class="features">
@@ -295,7 +295,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="address-container">
-                <a href="" class="footer-logo">Web<span class="footer-logo-span">Sutdio</span></a>
+                <a href="" class="footer-logo">Web<span class="footer-logo-span">Studio</span></a>
                 <address class="address">
                 <ul class="address-list">
                 <li class="address-list-item"><a href="" class="address-list-link location-link">м. Київ, пр-т Лесі Українки, 26</a></li>
@@ -343,10 +343,37 @@
                     <input class="footer-form-input" name="E-mail" id="" placeholder="E-mail"></input>
                     <button class="footer-form-btn" type="button">Підписатися</button>
                 </form>
-                
-                
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn" data-modal-close>close</button>
+            <h2 class="modal-title">Залиште нам свої дані, ми вам передзвонимо</h2>
+            <form class="form-modal" action="">
+                <label class="form-modal-label" for="">
+                    <p>Ім’я</p>
+                    <input type="text">
+                </label>
+                <label class="form-modal-label" for="">
+                    <p>Телефон</p>
+                    <input type="text">
+                </label>
+                <label class="form-modal-label" for="">
+                    <p>Пошта</p>
+                    <input type="text">
+                </label>
+                <label class="form-modal-label" for="">
+                    <textarea name="" id="">Коментар</textarea>
+                </label>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <p>Погоджуюся з розсилкою та приймаю</p><a href="">Умови договору</a>
+                </div>
+            </form>
+            <button class="btn">Відправити</button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 </html>

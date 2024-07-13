@@ -1,16 +1,26 @@
 .portfolio {
     padding: 94px 0;
     &-list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
-        padding: 94px 0;
+        margin: 0 auto;
+        margin-top: 34px;
+        @include tab(767px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        @include desc(1199px) {
+            justify-content: center;
+        }
     }
     &-list-item {
-        width: 370px;
-        height: 404px;
         border: 1px solid #EEEEEE;
+        @include tab(767px) {
+            width: 354px;        
+        }
+        @include desc(1199px) {
+            width: 370px;
+        }
+
     }
     &-list-title {
         font-family: 'Roboto', sans-serif;
@@ -30,16 +40,21 @@
     }
 }
 .filter-list {
+    flex-wrap: wrap;
     display: flex;
-    justify-content: center;
-    gap: 8px;
+    row-gap: 15px;
+    column-gap: 8px;
+
+    @include tab(767px) {
+        justify-content: center;
+    }
     &-btn {
         height: 38px;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 16px;
         border-radius: 4px;
-        padding: 6px 22px 6px 22px;
+        padding: 6px 25px;
     }
     &-btn:hover {
         background-color: #2196F3;

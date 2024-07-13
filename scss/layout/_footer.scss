@@ -4,7 +4,14 @@
     &-container {
         @include tab(767px) {
             display: flex;
-            gap: 70px;
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 165px;
+            row-gap: 60px;
+        }
+        @include desc(1199px) {
+            justify-content: space-between;
+            gap: 0;
         }
     }
     &-logo {
@@ -29,7 +36,9 @@
         color: #FFFFFF;
     }
     &-form {
-        margin: 0 auto;
+        @include tab(767px) {
+            margin: 0 auto;
+        }
     }
     &-form-input {
         padding: 15px;
@@ -39,6 +48,12 @@
         border: 1px solid #FFFFFF4D;
         border-radius: 5px;
         margin-bottom: 20px;
+        @include tab(767px) {
+            width: 450px;
+        }
+        @include desc(1199px) {
+            width: 358px;
+        }
     }
     &-form-btn {
         width: 200px;
