@@ -17,12 +17,110 @@
     overflow: hidden;
   }
   
-  .modal {
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 528px;
     min-width: 400px;
     padding: 40px;
-    background-color: skyblue;
+    border-radius: 4px;
+    background-color: white;
     transform: translate(-50%, -50%);
+    &-title {
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23.44px;
+      letter-spacing: 0.03em;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+  }
+  .form-modal {
+    height: 342px;
+    margin-bottom: 20px;
+  }
+  .label-input {
+    width: 448px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 4px;
+    border: 1px solid #757575;
+    opacity: 0px;
+    margin-bottom: 10px;
+  }
+  .label-title {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #757575;
+    margin-bottom: 4px;
+  }
+  .label-textarea {
+    width: 448px;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #75757580;
+    padding: 12px; 
+  }
+  .checkbox {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    &-text {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      text-align: left;
+    }
+    &-span {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      text-decoration: dashed;
+    }
+  }
+  .btn {
+    background: #2196F3;
+    color: #FFFFFF;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .modal-close-icon {
+    fill: currentColor;
+  }
+  .close-btn {
+    color: #000000;
+    background: transparent;
+    border: 1px solid #0000001A;
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    right: 10px;
   }

@@ -38,6 +38,27 @@
         padding-left: 24px;
         padding-bottom: 20px;
     }
+    &-overlay {
+        position: relative;
+        overflow: hidden;
+    }
+    &-overlay-text {
+        background-color: rgba(33, 150, 243, .9);
+        height: 294px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFFFFF;
+        padding: 63px 24px 0px 24px;
+    }
+    
+}
+.portfolio-list-item:hover .portfolio-overlay-text {
+    max-width: 370px;
+    transform: translateY(0);
 }
 .filter-list {
     flex-wrap: wrap;

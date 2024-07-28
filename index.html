@@ -31,6 +31,59 @@
                     <use href="./symbol-defs.svg#icon-tel"></use>
                 </svg> +38 096 111 11 11</a></li>
             </ul>
+            <button class="mob-menu-open-btn" type="button">
+                <svg width="40" height="40">
+                    <use href="./symbol-defs.svg#icon-mob-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu">
+            <div class="mob-menu-container">
+                <div class="mob-menu-top">
+                    <button class="mob-menu-close-btn">
+                        <svg class="mob-menu-close-icon" width="18" height="18">
+                            <use href="./symbol-defs.svg#icon-mob-menu-close"></use>
+                        </svg>
+                    </button>
+                    <nav class="mob-menu-nav">
+                        <ul class="mob-menu-nav-list">
+                            <li class="mob-menu-nav-list-item">
+                                <a class="mob-menu-nav-list-link" href="">Студія</a>
+                            </li>
+                            <li class="mob-menu-nav-list-item">
+                                <a class="mob-menu-nav-list-link" href="">Портфоліо</a>
+                            </li>
+                            <li class="mob-menu-nav-list-item">
+                                <a class="mob-menu-nav-list-link" href="">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mob-menu-bottom">
+                        <ul class="mob-menu-contact-list">
+                            <li class="mob-menu-contact-list-item">
+                                <a class="mob-menu-contact-list-link-tel" href="">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-menu-contact-list-item">
+                                <a class="mob-menu-contact-list-link-mail" href="">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mob-menu-social-list">
+                            <li class="mob-menu-social-list-item">
+                                <a class="mob-menu-social-list-link" href="">Instagram</a>
+                            </li>
+                            <li class="mob-menu-social-list-item">
+                                <a class="mob-menu-social-list-link" href="">Twitter</a>
+                            </li>
+                            <li class="mob-menu-social-list-item">
+                                <a class="mob-menu-social-list-link" href="">Facebook</a>
+                            </li>
+                            <li class="mob-menu-social-list-item">
+                                <a class="mob-menu-social-list-link" href="">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <section class="hero">
@@ -348,32 +401,38 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="btn" data-modal-close>close</button>
+            <button class="close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="11" height="11">
+                    <use href="./symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+            </button>
             <h2 class="modal-title">Залиште нам свої дані, ми вам передзвонимо</h2>
             <form class="form-modal" action="">
                 <label class="form-modal-label" for="">
-                    <p>Ім’я</p>
-                    <input type="text">
+                    <p class="label-title">Ім’я</p>
+                    <input class="label-input" type="text">
                 </label>
                 <label class="form-modal-label" for="">
-                    <p>Телефон</p>
-                    <input type="text">
+                    <p class="label-title">Телефон</p>
+                    <input class="label-input" type="text">
                 </label>
                 <label class="form-modal-label" for="">
-                    <p>Пошта</p>
-                    <input type="text">
+                    <p class="label-title">Пошта</p>
+                    <input class="label-input" type="text">
                 </label>
-                <label class="form-modal-label" for="">
-                    <textarea name="" id="">Коментар</textarea>
+                <label class="form-modal-label comment-label" for="">
+                    <p class="label-title">Коментар</p>
+                    <textarea class="label-textarea" name="" id="">Введіть текст</textarea>
                 </label>
-                <div class="checkbox">
-                    <input type="checkbox">
-                    <p>Погоджуюся з розсилкою та приймаю</p><a href="">Умови договору</a>
-                </div>
             </form>
+            <div class="checkbox">
+                <input type="checkbox">
+                <p class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="checkbox-span" href="">Умови договору</a></p>
+            </div>
             <button class="btn">Відправити</button>
         </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./menu.js"></script>
 </body>
 </html>

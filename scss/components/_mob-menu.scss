@@ -1,0 +1,98 @@
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-nav-list-item {
+        padding: 32px;
+    }
+    &-nav-list-link {
+        font-family: Roboto;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 46.88px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #212121;        
+    }
+    &-nav-list-link:hover {
+        color: #2196F3;
+    }
+    &-contact-list {
+        margin-top: 302px;
+        margin-bottom: 64px;
+    }
+    &-contact-list-item {
+        margin-bottom: 32px;
+    }
+    &-contact-list-link-tel {
+        font-family: Roboto;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 39.84px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #2196F3;       
+    }
+    &-contact-list-link-mail {
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.13px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #757575;        
+    }
+    &-social-list {
+        display: flex;
+        gap: 10px;
+    }
+    &-social-list-item:not(:first-child) {
+        border-left: 1px solid#212121;
+        padding-left: 10px;
+    }
+    &-social-list-link {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #2196F3;        
+    }
+    &-close-btn {
+        background: transparent;
+        color: #212121;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+    &-close-btn:hover {
+        color:#2196F3;
+    }
+    &-close-icon {
+        fill: currentColor;
+    }
+}
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.mob-menu-open-btn {
+    display: block;
+    margin-left: auto;
+    background: transparent;
+    @include tab(767px) {
+        display: none;
+    }
+}
