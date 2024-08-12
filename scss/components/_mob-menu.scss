@@ -7,6 +7,8 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
+    transform: translateX(0);
+    transition: 2s;
     &-container {
         display: flex;
         flex-direction: column;
@@ -75,6 +77,8 @@
         position: absolute;
         top: 10px;
         right: 15px;
+        width: 40px;
+        height: 40px;
     }
     &-close-btn:hover {
         color:#2196F3;
@@ -96,3 +100,6 @@
         display: none;
     }
 }
+.mob-menu.is-hidden{
+    transform: translateX(100%);
+  }
