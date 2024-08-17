@@ -6,6 +6,9 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
+    @include desc(1199px) {
+        text-align: left;
+    }
 }
 .social-list {
     display: flex;

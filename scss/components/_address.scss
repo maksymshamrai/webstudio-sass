@@ -1,5 +1,8 @@
 .address {
     text-align: center;
+    @include desc(1199px) {
+        text-align: left;
+    }
     &-container {
         margin-bottom: 60px;
     }
@@ -8,6 +11,9 @@
         font-weight: 400;
         font-size: 14px;
         color: #b5b1b1;
+    }
+    &-list-item {
+        margin-bottom: 9px;
     }
 }
 .location-link {

@@ -39,6 +39,11 @@ textarea {
 .address {
   text-align: center;
 }
+@media screen and (min-width: 1199px) {
+  .address {
+    text-align: left;
+  }
+}
 .address-container {
   margin-bottom: 60px;
 }
@@ -47,6 +52,9 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   color: #b5b1b1;
+}
+.address-list-item {
+  margin-bottom: 9px;
 }
 
 .location-link {
@@ -271,6 +279,15 @@ textarea {
   height: 342px;
   margin-bottom: 20px;
 }
+.form-modal-label {
+  margin-bottom: 10px;
+}
+
+.label-icon {
+  position: relative;
+  top: 11px;
+  left: 12px;
+}
 
 .label-input {
   width: 448px;
@@ -279,7 +296,7 @@ textarea {
   border-radius: 4px;
   border: 1px solid #757575;
   opacity: 0px;
-  margin-bottom: 10px;
+  position: absolute;
 }
 
 .label-title {
@@ -373,6 +390,11 @@ textarea {
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1199px) {
+  .social-title {
+    text-align: left;
+  }
 }
 
 .social-list {
@@ -599,6 +621,11 @@ textarea {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 1199px) {
+  .footer-logo {
+    text-align: left;
+  }
+}
 .footer-logo-span {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -613,6 +640,22 @@ textarea {
 @media screen and (min-width: 767px) {
   .footer-form {
     margin: 0 auto;
+  }
+}
+.footer-form-title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1199px) {
+  .footer-form-title {
+    text-align: left;
   }
 }
 .footer-form-input {
@@ -779,6 +822,7 @@ textarea {
   letter-spacing: 0.06em;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1199px) {
   .hero-title {
@@ -807,7 +851,6 @@ textarea {
   padding: 94px 0;
 }
 .portfolio-list {
-  margin: 0 auto;
   margin-top: 34px;
 }
 @media screen and (min-width: 767px) {
@@ -846,6 +889,7 @@ textarea {
   font-size: 18px;
   padding-top: 20px;
   padding-left: 24px;
+  color: #000000;
 }
 .portfolio-list-text {
   font-family: "Roboto";
@@ -862,19 +906,24 @@ textarea {
 }
 .portfolio-overlay-text {
   background-color: rgba(33, 150, 243, 0.9);
-  height: 294px;
+  height: 100%;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.03em;
-  text-align: left;
   color: #FFFFFF;
   padding: 63px 24px 0px 24px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.portfolio-list-item:hover .portfolio-overlay-text {
-  max-width: 370px;
+.portfolio-list-link:hover .portfolio-overlay-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

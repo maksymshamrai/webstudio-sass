@@ -22,6 +22,9 @@
         margin-bottom: 20px;
         display: block;
         text-align: center;
+        @include desc(1199px) {
+            text-align: left;
+        }
 
     }
     &-logo-span {
@@ -38,6 +41,20 @@
     &-form {
         @include tab(767px) {
             margin: 0 auto;
+        }
+    }
+    &-form-title {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.41px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;      
+        margin-bottom: 20px;  
+        @include desc(1199px) {
+            text-align: left;
         }
     }
     &-form-input {

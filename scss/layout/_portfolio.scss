@@ -1,7 +1,7 @@
 .portfolio {
     padding: 94px 0;
     &-list {
-        margin: 0 auto;
+        // margin: 0 auto;
         margin-top: 34px;
         @include tab(767px) {
             display: flex;
@@ -28,6 +28,7 @@
         font-size: 18px;
         padding-top: 20px;
         padding-left: 24px;
+        color: #000000;
     }
     &-list-text {
         font-family: 'Roboto';
@@ -44,20 +45,23 @@
     }
     &-overlay-text {
         background-color: rgba(33, 150, 243, .9);
-        height: 294px;
+        height: 100%;
         font-family: Roboto;
         font-size: 18px;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0.03em;
-        text-align: left;
         color: #FFFFFF;
         padding: 63px 24px 0px 24px;
+        transform: translateY(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 1s;
     }
     
 }
-.portfolio-list-item:hover .portfolio-overlay-text {
-    max-width: 370px;
+.portfolio-list-link:hover .portfolio-overlay-text {
     transform: translateY(0);
 }
 .filter-list {
