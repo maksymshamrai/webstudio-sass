@@ -27,3 +27,16 @@
     @content;
     }
 }
+@mixin retina($device-ratio,$dpi,$dppx){ 
+    @media (min-device-pixel-ratio:$device-ratio),
+       (min-resolution:$dpi),
+       (min-resolution:$dppx) {
+          @content;
+       }
+  }
+  @mixin background-image($webp,$fallback,$gradient){
+    @supports (background-image:url("#{$webp}")){
+      background-image:$gradient, url("#{$webp}");
+    }
+    background-image:$gradient, url("#{$fallback}");   
+}

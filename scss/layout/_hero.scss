@@ -1,9 +1,23 @@
 .hero {
     background-color: #2F303A;
     //background-image: url("../images/background\ hero.png");
+    @include background-image("../images/hero/hero-mob-1x.webp" "../../images/hero/hero-mob-1x.jpg", $hero-gradient);
+    @include retina(2,192dpi, 2dppx){
+        @include background-image("../../images/hero/hero-mob-2x.webp" "../../images/hero/mob-2x.jpg", $hero-gradient);
+    }
     padding: 118px 0;
+    @include tab(767px) {
+        @include background-image("../../images/hero/hero-tab-1x.webp" "../../images/hero/hero-tab-1x.jpg", $hero-gradient);
+        @include retina(2,192dpi, 2dppx){
+            @include background-image("../../images/hero/hero-tab-2x.webp" "../../images/hero/tab-2x.jpg", $hero-gradient);
+        }        
+    }
     @include desc(1199px) {
         padding: 200px 0;
+        @include background-image("../../images/hero/hero-desc-1x.webp" "../../images/hero/hero-desc-1x.jpg", $hero-gradient);
+        @include retina(2,192dpi, 2dppx){
+            @include background-image("../../images/hero/hero-desc-2x.webp" "../../images/hero/hero-desc-2x.jpg", $hero-gradient);
+        }
     }
     &-title {
         text-align: center;
