@@ -185,8 +185,8 @@
                      srcset="./images/ihor_1x-mob.jpg 1x, ./images/ihor_2x-mob.jpg 2x"
                      type="image/jpeg"
                      >
+                     <img src="./images/Igor.jpg" alt="Igor">
                     </picture>
-                    <img src="./images/Igor.jpg" alt="Igor">
                     <h3 class="team-list-title">Ігор Дем*яненко</h3>
                     <p class="team-list-text">Product Designer</p>
                     <ul class="social-list">
@@ -515,11 +515,15 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="form-container">
                 <p class="footer-form-title">Підпишітся на розсилку</p>
                 <form class="footer-form" action="">
                     <input class="footer-form-input" name="E-mail" id="" placeholder="E-mail"></input>
-                    <button class="footer-form-btn" type="button">Підписатися</button>
+                    <button class="footer-form-btn" type="button">Підписатися
+                        <svg class="footer-form-icon" width="24" height="24">
+                            <use href="./symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -535,7 +539,7 @@
             <form class="form-modal" action="">
                 <label class="form-modal-label" for="">
                     <p class="label-title">Ім’я</p>
-                    <span>
+                    <span class="label-span">
                         <input class="label-input" type="text">
                         <svg class="label-icon" width="18" height="18">
                             <use href="./symbol-defs.svg#icon-modal-contact"></use>
@@ -544,7 +548,7 @@
                 </label>
                 <label class="form-modal-label" for="">
                     <p class="label-title">Телефон</p>
-                    <span>
+                    <span class="label-span">
                         <input class="label-input" type="text">
                         <svg class="label-icon" width="18" height="18">
                             <use href="./symbol-defs.svg#icon-modal-phone"></use>
@@ -553,7 +557,7 @@
                 </label>
                 <label class="form-modal-label" for="">
                     <p class="label-title">Пошта</p>
-                    <span>
+                    <span class="label-span">
                         <input class="label-input" type="text">
                         <svg class="label-icon" width="18" height="18">
                             <use href="./symbol-defs.svg#icon-modal-mail"></use>

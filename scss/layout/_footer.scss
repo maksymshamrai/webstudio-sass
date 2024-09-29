@@ -42,6 +42,12 @@
         @include tab(767px) {
             margin: 0 auto;
         }
+        @include desc(1199px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
     }
     &-form-title {
         font-family: Roboto;
@@ -70,6 +76,7 @@
         }
         @include desc(1199px) {
             width: 358px;
+            margin: 0;
         }
     }
     &-form-btn {
@@ -81,8 +88,14 @@
         font-family: Roboto;
         font-size: 16px;
         font-weight: 700;
-        text-align: center;
         display: block;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    &-form-icon {
+        fill: currentColor;
     }
 }
