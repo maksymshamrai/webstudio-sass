@@ -20,7 +20,7 @@
     "> 1%",
     "last 2 versions"
     ],
-    "editor.fontFamily": "Ubuntu",
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontWeight": "normal",
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5501
     }
